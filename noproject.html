@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('pictures/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; /* Center the background image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #f54804;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .btn-back:hover {
+            background-color: hsl(34, 96%, 69%);
+        }
+
+        .buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #f54804;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: hsl(34, 96%, 69%);
+        }
+
+        .center-image {
+            max-width: 80%; 
+            max-height: 80%; 
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="btn-back" onclick="goBack()">Back</a>
+<div class="buttons">
+    <a href="profile.html" class="btn">Profile</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="referrals.html" class="btn">Referrals</a>
+</div>
+<img src="pictures/no project.png" alt="Your Image" class="center-image">
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>

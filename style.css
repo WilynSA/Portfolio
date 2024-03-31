@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pictures/background.jpg');
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire background */
+}
+
+.container {
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Limit maximum width for larger screens */
+    margin: 50px auto;
+    padding: 50px;
+    background-color: hsl(34, 96%, 69%); /* Background color with transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position the container relative for absolute positioning */
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic img {
+    width: 100%; /* Make the image responsive */
+    max-width: 180px; /* Limit maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.details {
+    text-align: left;
+}
+
+.details h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+    font-size: 24px; /* Decreased font size for heading */
+}
+
+.details p {
+    margin: 5px 0;
+    color: #080808;
+    font-size: 18px; /* Decreased font size for paragraphs */
+}
+
+.btn-back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f54804;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1; /* Ensure back button is above other content */
+}
+
+.btn-back:hover {
+    background-color:hsl(34, 96%, 69%);
+}
+
+.buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1; 
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f54804;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:hsl(34, 96%, 69%);
+}
